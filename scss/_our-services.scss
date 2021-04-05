@@ -1,0 +1,239 @@
+.our-services {
+
+    position: relative;
+    text-align: center;
+    background-color: $page-color;
+    height: 140vh;
+   
+    h1 {
+        position: relative;
+        z-index: 11;
+    }
+
+    .service-cards {
+        padding-top: 2rem;
+        background-color: $page-color;
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .sps {
+            background: url("../images/Sps.svg");
+        }
+
+        .compass {
+            background: url(../images/Crossroads-compass.svg);
+        }
+
+        .packapper {
+            background: url("../images/Packapper.svg");
+        }
+
+        .carrer-guidence {
+            background: url("../images/carrer-guidence.svg");
+        }
+
+        .svg {
+            height: calc(5em + 2vw);
+            width: calc(6rem + 2vw);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .service-card {
+            margin: 10px 0;
+            background: $linear;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: calc(80% + 1.5rem); 
+            max-width: 500px;
+            padding: 1.5em .5em;
+            background-color: white;
+            box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            z-index: 13;
+            
+
+            &:hover {
+                cursor: pointer;
+                background: none;
+                background-color: white;
+                .service-textbox {
+                    color: $primary-color;
+                }
+            }
+            
+            .service-textbox {
+                
+                color: white;
+                text-align: left;
+                width: 50%;
+                .service-title {
+                    color: inherit;
+                    text-shadow: none;
+                    font-weight: 600;
+                    letter-spacing: 0.15em;
+                    line-height: 1em;
+                    font-size: calc(.8rem + 1vw);
+                    margin-bottom: 10px;
+                }
+
+                .service-para {
+                    color: inherit;
+                    font-size: calc(.4em + .56vw);
+                    line-height: 1em;
+                    font-weight: 500;
+                    letter-spacing: .15em;
+                
+                }
+
+                
+                
+            }
+            
+        }
+
+        
+    }
+    @media (min-width: 370px) {
+        .service-cards{
+            height: 90vh;
+        }
+    }
+
+    @media (min-width: 400px) {
+        .service-cards{
+            margin-top: 5em;
+            height: 70vh;
+
+            .service-card{
+                max-width: 500px;
+            }
+        }
+    }
+    @media (min-width: 800px) {
+        
+        
+        .service-cards {
+            position: relative;
+            margin: auto;
+            height: 90vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 35vw 35vw;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            grid-gap: 40px;
+    
+            
+
+            .svg {
+                height: calc(4em + 2vw);
+            }
+
+            .service-card {
+                max-width: 1000px;
+                padding: 2em 2em;
+                width: auto;
+                min-height: 10rem;
+                height: 30vh;
+                z-index: 12;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0;
+            }
+
+            
+
+            &::before {
+                background: url("../images/services-vector-2.svg");
+                left: -5px;
+                top: 40%;
+            }
+
+            &::after {
+                background: url("../images/services-vector-1.svg");
+                right: 0;
+                top: 8%;
+                background-position: right;
+            }
+
+            &::before, &::after {
+                z-index: 10;
+                content: "";
+                height: 50vh;
+                width: 50%;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+
+
+
+
+.our-services::after {
+    content: "";
+    background-size: contain;
+    background-image: url("../images/wave-service.svg") ;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    top: -5.3em;
+    left: 0;
+    z-index: 5;
+}
+
+
+@media (min-width: 360px) {
+    .our-services {
+        height: 130vh;
+    }
+}
+@media (min-width: 375px) {
+    .our-services {
+        
+        height: 110vh;
+    }
+
+    .our-services::after{
+        top: -6.4em;
+
+        z-index: 2;
+    }
+
+    
+}
+
+
+@media (min-width: 800px) {
+    .our-services {
+        height: 100vh;
+    }
+    
+}
+
+
+
+@media (min-width: 950px) {
+    .our-services {
+        padding-top: 2em;
+    }
+
+    .our-services::after {
+        top: -10em;
+    }
+}
+
+

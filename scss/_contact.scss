@@ -1,0 +1,67 @@
+.contact {
+    height: auto;
+    background-color: $page-color;
+
+    p {
+        
+        font-weight: 500;
+        font-size: calc(1rem + 1vw);
+        letter-spacing: 0.035em;
+        color: #8A8989;
+    }
+
+
+    .contact-card {
+        padding-top: 2rem;
+        height: auto;
+        padding-bottom: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .svg {
+            height: calc(3em + 2vw);
+            width: calc(6rem + 2vw);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .service-card {
+            position: relative;
+            margin: 10px 0;
+            background: $linear;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: calc(80% + 1.5rem); 
+            max-width: 500px;
+            padding: 1.5em .5em;
+            background-color: white;
+            box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            z-index: 13;
+
+            p {
+                width: 50vw;
+                color: white;
+                font-size: calc(.58rem + 1vw);
+            }
+
+            .map {
+                background-image: url("../images/location.svg");
+            }
+
+            .phone {
+                background-image: url("../images/phone-call.svg");
+            }
+            
+            .email {
+                background-image: url("../images/email.svg");
+            }
+
+        }
+
+    }
+}

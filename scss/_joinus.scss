@@ -1,0 +1,133 @@
+.join-us {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-color: $page-color;
+
+    @media (min-width: 1000px) {
+        height: 70vh;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../images/Contact-wave.svg");
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        top: -18%;
+        left: 0;
+        z-index: -1;
+
+        @media (min-width:700px) {
+            top: -30%;
+        }
+        @media (min-width: 1000px) {
+            top: -45%;
+
+        }
+        @media (min-width: 1030px) {
+            height: 70vh;
+            top: -55%;
+        }
+    }
+
+    .joinus-cont {
+        position: relative;
+        content: "";
+        height: 28vh;
+        width: 100%;
+        text-align: center;
+        
+        @media (min-width: 1000px) {
+            height: 30vh;
+        }
+
+        
+
+        .sec-title {
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            
+            span {
+                color: $primary-color;
+            }
+        }
+
+        .plane {
+            position: absolute;
+            right: 30%;
+            width: 10vw;
+            top: -2%;
+
+            @media (min-width:700px) {
+                width: 5vw;
+                right: 40%;
+            }
+
+            @media (min-width: 1000px) {
+                top: -13%;
+            }
+        }
+    
+        .join-para {
+            position: relative;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            p {
+                
+                font-size: calc(.5rem + 1vw);
+                margin: 0;
+                padding: 0;
+                color: #8A8989
+            }
+
+    
+            
+        }
+    }
+
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            background-color: transparent;
+            border: $primary-color solid 4px;
+            border-radius: 10px;
+            padding: 1em 1.5em;
+            font-size: calc(.5rem + .8vw);
+            color: black;
+            text-decoration: none;
+            outline: none;
+            font-weight: 600;
+            box-shadow: none;
+        }
+
+        button {
+            font-size: calc(.8rem + .8vw);
+            text-transform: uppercase;
+            background-color: $primary-color;
+            margin-top: 2em;
+            color: white;
+            font-weight: 500;
+            padding: .7em 1.5em;
+            border: none;
+            border-radius: 10px;
+            letter-spacing: 0.15em;
+            cursor: pointer;
+
+
+        }
+    }
+    
+}

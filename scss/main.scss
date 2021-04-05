@@ -1,0 +1,110 @@
+@import 'hero.scss', "globals.scss", "our-services", "nav", "about" , "work", "joinus", "contact";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+section {
+    text-align: center;
+}
+h1.cross {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: calc(2.3rem + 2vw );
+    
+}
+
+h1{
+    color: $heading-color;
+    font-weight: 600;
+    font-size: calc(1.8rem + 1.2vw);
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    color: $accent-color;
+    font-weight: 600;
+    font-size: calc(1rem + .8vw);
+    
+}
+
+.sec-title {
+    font-weight: 500;
+    text-align: center;
+    font-size: calc(1.8rem + 1.2vw);
+    letter-spacing: .15em;
+    color: #000;
+    line-height: 111px;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+// .service-card {
+//     margin: 10px 0;
+//     background: linear-gradient(99.65deg, #CF0015 13.73%, rgba(207, 0, 21, 0.1) 116.93%, rgba(207, 0, 21, 0) 116.94%);
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     width: calc(80% + 1.5rem); 
+//     max-width: 500px;
+//     padding: 1.5em .5em;
+//     background-color: white;
+//     box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.25);
+//     border-radius: 20px;
+//     z-index: 13;
+    
+
+//     &:hover {
+//         cursor: pointer;
+//         background: none;
+//         background-color: white;
+//         .service-textbox {
+//             color: $primary-color;
+//         }
+//     }
+
+//     .svg {
+//         height: calc(5em + 2vw);
+//         width: calc(6rem + 2vw);
+//         background-position: center;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+
+//         @media (min-width: 800px) {
+//             height: calc(4em + 2vh);
+//         }
+//     }
+
+
+//     .service-textbox {
+                
+//         color: white;
+//         text-align: left;
+//         width: 50%;
+//         .service-title {
+//             color: inherit;
+//             text-shadow: none;
+//             font-weight: 600;
+//             letter-spacing: 0.15em;
+//             line-height: 1em;
+//             font-size: calc(.8rem + 1vw);
+//             margin-bottom: 10px;
+//         }
+
+//         .service-para {
+//             color: inherit;
+//             font-size: calc(.4em + .56vw);
+//             line-height: 1em;
+//             font-weight: 500;
+//             letter-spacing: .15em;
+        
+//         }
+//     }
+// }

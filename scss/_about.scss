@@ -1,0 +1,124 @@
+.about-us {
+    // padding-top: 5rem;
+    text-align: center;
+    height: auto;
+    padding-bottom: 10.5em;
+    position: relative;
+
+    h1 {
+        position: relative;
+        top: -30%;
+    }
+    
+    img {
+        position: absolute;
+        right: 0;
+        top: 3%;
+        width: 120%;
+        height: 30%;
+    }
+    &::before {
+    content: "";
+    
+    background-image: url("../images/About_wave.svg") ;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    top: -1%;
+    left: 0;
+    z-index: -1;
+    }
+
+    .sec-title {
+       top: -9.5%;
+       position: relative;
+    }
+
+    
+
+    .main-about-content {
+        
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: -10%;
+
+        .main-img {
+            width: 40%;
+            max-width: 800px;
+            border-radius: 25px;
+            border: white 5px solid;
+        }
+
+        .main-about-textbox {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            .about-main {
+                letter-spacing: 3.5%;
+                font-weight: 500;
+                font-size: calc(.9rem + 2vw);
+            }
+            .about-main-sub {
+                font-size: calc(.5rem + 1vw);
+                color: rgba(129, 129, 129, 0.79);
+            }
+        }
+
+
+        
+    }
+
+    .sub-about-content {
+        margin-top: 3.5em;
+        position: relative;
+        top: -8%;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (min-width:700px) {
+                width: 80%;
+                margin: auto;
+                margin-top: 5em;
+        }
+        
+
+        .sub-img-cont {
+
+            
+            .sub-img {
+                border-radius: 10px;
+                width: 80%;
+            }
+
+            .sub-name {
+                font-weight: 500;
+                letter-spacing: .035em;
+                font-size: calc(.5rem + .8vw);
+            }
+        }
+    }
+
+    .main-img, .sub-img {
+        position: relative;
+    }
+
+    .about-text-cont {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        padding-top: 8%;   
+
+        p {
+            color: #9B9B9B;
+            font-size: calc(.8rem + 1.3vw);
+        }
+    }
+}
+
+

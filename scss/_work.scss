@@ -1,0 +1,122 @@
+.works {
+
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10em;
+
+    @media (min-width: 700px) {
+        padding-bottom: 15em;
+    }
+
+    @media (min-width: 1000px) {
+        padding-bottom: 30em;
+    }
+
+    .sec-title {
+        padding-bottom: 1.5em;
+    }
+
+
+    .works-showcase-cont{
+        width: 150%;
+        margin: auto;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-around;
+        align-items: center;
+        
+        .works-showcase-sec {
+            display: flex;
+            padding-bottom: 2vh;
+            left: -10%;
+            position: relative;
+            margin: auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns:  repeat(20 , 25vw);
+            grid-column-gap: 5px;
+            overflow: hidden;
+            align-content: center;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 2vw;
+            }
+            .work-para {
+                width: 25vw;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                p {
+                    text-align: center;
+                    font-size: calc(.3rem + .7vw);
+
+                    span {
+                        color: $primary-color;
+                    }
+                }
+
+            }
+        }
+
+    
+
+        .works-showcase-sec:nth-child(2) {
+            left: -3%;
+        }
+    }
+    @media (min-width: 600px) {
+        
+        .works-showcase-cont {
+            grid-template-rows: 9vh;
+            align-content: center;
+        }
+    }
+
+    @media (min-width: 700px) {
+        
+        .works-showcase-cont {
+            grid-template-rows: 13vh;
+            align-content: center;
+
+            .works-showcase-sec {
+                left: -3%;
+                grid-template-columns: repeat(20, 20vw);
+                img {
+                    margin-left: 5%;
+                }
+
+                .work-para {
+                    width: 20vw;
+                    padding:  0 .3em 0 1em;
+                }
+            }
+            .works-showcase-sec:nth-child(2) {
+                left: -1%;
+            }
+
+            .works-showcase-sec:nth-child(2) {
+                left: -6%;
+            }
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .works-showcase-cont {
+            grid-template-rows: 12vh;
+
+            .works-showcase-sec {
+                grid-template-columns: repeat(20, 15vw);
+
+                .work-para {
+                    width: 15vw;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// global varibales
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+
+$primary-color: #CF0015;
+$accent-color: #181C16;
+$heading-color: #000;
+$page-color: #FAE3E5;
+$primary-font : 'Poppins', sans-serif;
+$linear: linear-gradient(99.65deg, #CF0015 13.73%, rgba(207, 0, 21, 0.1) 116.93%, rgba(207, 0, 21, 0) 116.94%);
+
+.primary-btn-style {
+    height: 3.5rem;
+    width: 10rem;
+    text-align: center;
+    z-index: 3;
+    background-color: $accent-color;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    font-size: calc(.9rem + .4vw);
+    cursor: pointer;
+
+    &:hover {
+        background-color: white  !important;
+        color: black;
+        border: 3px solid black;
+    }
+}
+
+
+
