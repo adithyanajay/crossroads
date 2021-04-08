@@ -1,5 +1,4 @@
 .hero-main {
-    z-index: -1;
     position: relative;
     height: 90vh;
     width: 100%;
@@ -17,6 +16,10 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        .hero-btn {
+            z-index: 9;
+        }
     }
 }
 

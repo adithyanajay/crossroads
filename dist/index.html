@@ -16,42 +16,45 @@
 
 
         <ul class="nav-links desktop">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#link-home"     class="nav-link">Home</a></li>
+            <li><a href="#link-services" class="nav-link">Services</a></li>
+            <li><a href="#link-about"    class="nav-link">About</a></li>
+            <li><a href="#link-works"    class="nav-link">Works</a></li>
+            <li><a href="#link-contact"  class="nav-link">Contact</a></li>
         </ul>
 
         <ul class="nav-links mobile">
             
-            <li><a href="" id="home"     class="icon"></a></li>
-            <li><a href="" id="gear"     class="icon"></a></li>
-            <li><a href="" id="about"    class="icon"></a></li>
-            <li><a href="" id="suitcase" class="icon"></a></li>
-            <li><a href="" id="letter"   class="icon"></a></li>
+            <li><a href="#link-home" id="home-i"       class="nav-link icon"></a></li>
+            <li><a href="#link-services" id="gear-i"   class="nav-link icon"></a></li>
+            <li><a href="#link-about" id="about-i"     class="nav-link icon"></a></li>
+            <li><a href="#link-works" id="suitcase-i"  class="nav-link icon"></a></li>
+            <li><a href="#link-contact" id="letter-i"  class="nav-link icon"></a></li>
         </ul>
 
         <div class="subs">
-            200k Subscribed
+            <a href="https://www.youtube.com/channel/UCoGHeFY7jE2OB_TJS_87MOA?sub_confirmation=1">200k Subscribed</a>
         </div>
     </nav>
 
     
 
-    <div class="hero-main">
+    <section class="hero-main" id="home">
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="cross">Crossroads</h1>
                 <p>HOW FAR YOU CAN GO!</p>
             </div>
             <button class="hero-btn primary-btn-style">
-                See courses
+                <a href="https://www.youtube.com/c/Crossroadstalk/playlists">
+                    See courses
+                </a>
+        
             </button>
         </div>
-    </div>
+    </section>
 
-    <section class="our-services">
+    <section class="our-services" id="services">
         <h1 class="sec-title">
             Our Services
         </h1>
@@ -109,7 +112,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about">
         <h1 class="sec-title">
             About Us
         </h1>
@@ -121,6 +124,7 @@
             </div>
             
             <img class="main-img" src="../dist/images/Nikhil.png" alt="">
+    
         </div>
 
 
@@ -128,6 +132,7 @@
             <div class="sub-img-cont">
                 <img src="../dist/images/Faizal.png" alt="" class="sub-img">
                 <p class="sub-name">Muhammad Faizl</p>
+    
             </div>
             <div class="sub-img-cont">
                 <img src="../dist/images/Dilshad.png" alt="" class="sub-img">
@@ -152,7 +157,7 @@
         </div>
     </section>
 
-    <section class="works">
+    <section class="works" id="works">
         <h1 class="sec-title">
             Our Works
         </h1>
@@ -205,7 +210,7 @@
     </section>
 
 
-    <section class="join-us">
+    <section class="join-us" id="contact">
         <div class="joinus-cont">
 
             <div class="join-textbox">
@@ -226,7 +231,7 @@
 
         <form method="GET" class="subscribe">
             <input type="email" name="Email" placeholder="me@email.com" required>
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="sec-button">Subscribe</button>
         </form>
         
     </section>
@@ -266,6 +271,38 @@
             </div>
             
         </div>
+
+
+
+        <form class="contact-form">
+            <p>Contact form</p>
+            <div class="form">
+        
+                <input type="text" name="Name" required  placeholder="Your name">
+                <input type="email" name="Email" required placeholder="name@email.com">
+                <input type="text" name="Number" required placeholder="Phone no">
+    
+            </div>
+            <textarea name="message" id="message " cols="30" rows="10" placeholder="Message"></textarea>
+
+            <button class="sec-button" type="submit">SEND</button>
+
+        </form>
     </section>
+
+    <footer>
+        <ul class="icons">
+            <li> <a href=""><img src="../dist/images/icons/facebook.svg" alt=""></a></li>
+            <li> <a href=""><img src="../dist/images/icons/instagram.svg" alt=""></a></li>
+            <li> <a href=""><img src="../dist/images/icons/linkedin.svg" alt=""></a></li>
+            <li> <a href=""><img src="../dist/images/icons/youtube.svg" alt=""></a></li>
+        </ul>
+
+
+        <div class="footer-text-cont">
+            <p class="footer-text">All rights reserved @ Packapeer Academy Pvt Ltd 2020</p>
+            <p class="footer-text"></p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -29,42 +29,22 @@ window.onscroll = ()=>{
 
 
 
-//position change in work section
+const links = document.querySelectorAll(".nav-link")
 
 
-const works = document.querySelector(".works");
-// console.log(works.scrollHeight)
-// console.log(works.s)
-// console.log(document.documentElement.scrollTop - works.scrollHeight)
+links.forEach((link)=> {
+    link.addEventListener("click", (e)=> {
+        // e.preventDefault()
 
-// const workScroll = ()=> {
-//     const sec1 = document.getElementsByClassName("works-showcase-sec")[0]
-//     const sec2 = document.getElementsByClassName("works-showcase-sec")[1]
-//     const sec3 = document.getElementsByClassName("works-showcase-sec")[2]
-//     console.log(sec1)
-//     if(document.documentElement.scrollTop >= works.offsetTop-200){
-//        sec1.style.left = "-20%";
-//        console.log("yes")
+        let sec =  link.href.split('link-')
+        sec =  "#" + sec[1]
 
-//        sec2.style.left = "0%";
-//        console.log("yes")
-
-//        sec3.style.left = "10%";
-//        console.log("yes")
-//     }
+        window.scroll({
+            top: document.querySelector(sec).offsetTop -150,
+            behavior: 'smooth',
+            left: 0
+        })
     
-//     if(document.documentElement.scrollTop <= works.offsetTop-200){
-//         sec1.style.left = "-10%";
-//         console.log("yes")
 
-//         sec2.style.left = "-3%";
-//         console.log("yes")
- 
-//         sec3.style.left = "-10%";
-//         console.log("yes")
-//      }
-// }
-
-
-// console.log(works.offsetTop)
-// window.onscroll = ()=>slide_pic()
+    })
+})
