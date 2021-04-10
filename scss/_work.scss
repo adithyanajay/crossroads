@@ -24,7 +24,14 @@
         flex-direction: column ;
         justify-content: space-around;
         align-items: center;
-        
+        height: 30vh;
+
+        @media (min-width:700px) {
+            height: 35vh;
+        }
+        @media (min-width:1000px) {
+            height: auto;
+        }
         .works-showcase-sec {
             display: flex;
             padding-bottom: 2vh;

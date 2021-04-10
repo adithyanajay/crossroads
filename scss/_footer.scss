@@ -1,8 +1,7 @@
 footer {
     height: 30vh;
     background-color: white;
-
-    
+    position: relative;
 
     .facebook {
         background-image: url("../images/icons/facebook.svg");
@@ -21,12 +20,10 @@ footer {
 
         .icons {
             display: flex;
-            justify-content: right;
+            justify-content: center;
             align-items: center;
             height: 10vh;
-            margin: auto;
-            width: 90%;
-            text-align: right;
+            width: 100%;
 
             li {
                 position: relative;
@@ -58,7 +55,7 @@ footer {
                 
                 
             }
-        
+            
     }
 
 

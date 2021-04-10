@@ -529,6 +529,19 @@ nav .mobile #letter-i {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 30vh;
+}
+
+@media (min-width: 700px) {
+  .works .works-showcase-cont {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .works .works-showcase-cont {
+    height: auto;
+  }
 }
 
 .works .works-showcase-cont .works-showcase-sec {
@@ -665,7 +678,7 @@ nav .mobile #letter-i {
 .join-us .joinus-cont {
   position: relative;
   content: "";
-  height: 28vh;
+  height: 230px;
   width: 100%;
   text-align: center;
 }
@@ -896,6 +909,7 @@ nav .mobile #letter-i {
 footer {
   height: 30vh;
   background-color: white;
+  position: relative;
 }
 
 footer .facebook {
@@ -916,12 +930,10 @@ footer .youtube {
 
 footer .icons {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   height: 10vh;
-  margin: auto;
-  width: 90%;
-  text-align: right;
+  width: 100%;
 }
 
 footer .icons li {
